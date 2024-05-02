@@ -43,7 +43,7 @@ public class PieceController : MonoBehaviour
     //NO MODIFICAR
     public void RotateRight()
     {
-        cubeTransform.Rotate(Vector3.forward, -90); //Puede probar rotar con este m�todo para verificar la rotaci�n (Descomente esta l�nea de c�digo)
+        //cubeTransform.Rotate(Vector3.forward, -90); //Puede probar rotar con este m�todo para verificar la rotaci�n (Descomente esta l�nea de c�digo)
 
         StartCoroutine(RotatePiece(-90f));
     }
@@ -58,7 +58,7 @@ public class PieceController : MonoBehaviour
         float startPosition = 0f;
         float targetPosition = 0f;
 
-        StartCoroutine(TranslateAnimation(0f, 0f));
+        StartCoroutine(TranslateAnimation(2f, 4f));
 
         yield return new WaitForSeconds(0.1f); //NO MODIFICAR
 
